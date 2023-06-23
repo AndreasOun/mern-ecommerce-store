@@ -1,6 +1,7 @@
 const data = {
     products: [
       {
+        _id: '1',
         name: 'Gucci Women\'s Bag',
         slug: 'gucci-womens-bag',
         category: 'bags',
@@ -13,6 +14,7 @@ const data = {
         description: 'High-quality bag for women, designed by Gucci.',
       },
       {
+        _id: '2',
         name: 'Gucci Men\'s T-Shirt',
         slug: 'gucci-mens-tshirt',
         category: 'clothing',
@@ -25,6 +27,7 @@ const data = {
         description: 'Stylish and comfortable t-shirt for men, created by Gucci.',
       },
       {
+        _id: '3',
         name: 'Gucci Women\'s Dress',
         slug: 'gucci-womens-dress',
         category: 'clothing',
@@ -37,6 +40,7 @@ const data = {
         description: 'Elegant and fashionable dress for women, crafted by Gucci.',
       },
       {
+        _id: '4',
         name: 'Gucci Men\'s Watch',
         slug: 'gucci-mens-watch',
         category: 'accessories',
@@ -49,6 +53,7 @@ const data = {
         description: 'Sleek and sophisticated watch for men, designed by Gucci.',
       },
       {
+        _id: '5',
         name: 'Gucci Women\'s Sunglasses',
         slug: 'gucci-womens-sunglasses',
         category: 'accessories',
