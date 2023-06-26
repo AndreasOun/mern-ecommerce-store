@@ -1,6 +1,22 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
-    products: [
-      {
+  users: [
+    {
+      name: 'Andreas',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'John',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
+  products: [
+     {
         name: 'Gucci Women\'s Bag',
         slug: 'gucci-womens-bag',
         category: 'bags',
