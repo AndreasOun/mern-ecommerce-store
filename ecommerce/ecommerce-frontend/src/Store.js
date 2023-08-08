@@ -22,7 +22,6 @@ const initialState = {
 function reducer(state, action) {
   switch (action.type) {
     case 'CART_ADD_ITEM':
-      // add to cart
       const newItem = action.payload;
       const existItem = state.cart.cartItems.find(
         (item) => item._id === newItem._id
@@ -63,10 +62,10 @@ function reducer(state, action) {
             },
           };
           case 'SAVE_PAYMENT_METHOD':
-            return{
-              ...state,
-              cart: {...state.cart, paymentMethod: action.playload },
-            };
+            return {
+            ...state,
+            cart: { ...state.cart, paymentMethod: action.payload },
+      };
     default:
       return state;
   }
