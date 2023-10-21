@@ -35,6 +35,13 @@ export default function ProfileScreen() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+
+    
+  if (password !== confirmPassword) {
+    toast.error('Passwords do not match. Please ensure both passwords match.');
+    return;
+  }
+
     try {
       const { data } = await axios.put(
         '/api/users/profile',
