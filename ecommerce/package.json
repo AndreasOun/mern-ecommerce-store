@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd ecommerce-backend && npm install && cd ../ecommerce-frontend && npm install && npm run build --force",
-    "start": "node backend/server.js",
+    "start": "node ecommerce-backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
